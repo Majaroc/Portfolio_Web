@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio_Trichet_Clement</title>
+    <style> 
+    body{
+            margin: 0;
+        }
+
+    header{
+            background-color: rgb(82, 105, 122);
+            overflow: auto;
+            font-size: 6vw;
+
+            display: flex;
+            flex-direction: column;
+            place-items: center;
+        }
+
+    nav{
+        
+        background-color: cadetblue;
+        color: beige;
+
+        position: sticky;
+        top: 1%;
+
+        display: flex;        
+        justify-content: space-evenly;       
+    }
+
+    main{
+        background-color: rgb(82, 105, 122);
+        padding: 3%;
+ 
+    }
+
+    section{
+        margin:0 0 3%;
+    }
+
+    nav p {
+        margin:1% 0;
+        font-size: 2vw;
+    }
+
+    .Categorie{
+        background-color: beige;
+        color: cadetblue; 
+        font-size: 4vw;
+        margin: 0;
+        padding: 1rem;
+
+        display: flex;
+        justify-content: center;
+    }
+
+    main section{
+        scroll-margin-top: 10vh;
+    }
+
+    #Titre{
+        margin: 5% 0 0;
+        color: beige;
+    }
+
+    #Prenom{
+        font-size: 4vw;
+        margin: 1% 0 5%;
+        color: beige;
+    }   
+
+    #Projet{
+        background-color: beige;
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #Projet > article{
+        background-color: cadetblue;
+        color: beige;
+        font-size: 2vw;
+        width: 30%; 
+        margin:0 0 2%; 
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #ABOUT-ME{
+        background-color: beige;
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #ABOUT-ME > article{
+        background-color: cadetblue;
+        color: beige;
+        font-size: 2vw;
+        width: 95%; 
+        margin:0 0 2%; 
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    img{
+        width: 90%;
+        height: auto;
+        margin: 5% 0;
+    }
+    
+    @media (max-width: 500px) { 
+            header{
+                background-color: beige;
+                color: cadetblue;
+                font-size: 7vw;
+            }
+
+            #Titre,#Prenom{
+                color: cadetblue;
+            }
+
+            nav{
+                font-size: 3vw;
+            }
+
+            .Categorie{
+                font-size: 6vw;
+            }
+
+            #Projet > article{
+                width: 90%;
+                margin:0 0 5%;
+                font-size: 3vw;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="Titre">Trichet Clément</h1> 
+        <p id="Prenom">Portfolio</p>
+    </header>
+
+    <nav>
+        <p> <a href="#Titre">
+            ACCUEIL
+        </a></p> 
+        <p> <a href="#Projet">
+            PROJET
+        </a></p>
+        <p> <a href="#ABOUT-ME">
+            ABOUT ME
+        </a></p>
+    </nav>
+
+    <main>
+        <section id="Projet">
+            <h2 class="Categorie">
+                PROJET
+            </h2>
+            <article id="Ebiko">
+                <h1 class="Titre-Categorie">Ebiko</h1>
+                <img src="Img/Capture d’écran 2022-01-21 033709.jpg" alt="">
+            </article>
+            <article id="Valhalla">
+                <h1 class="Titre-Categorie">Valhalla</h1>
+                <img src="Img/Frame 6.png" alt="">
+            </article>
+            <article id="LP3D">
+                <h1 class="Titre-Categorie">Very Low Poly 3D</h1>
+                <img src="Img/Plaine_Low_Poly.png" alt="">
+            </article>
+        </section>
+
+        <section id="ABOUT-ME">
+            <h2 class="Categorie">
+                ABOUT ME
+            </h2>
+            <article id="Moi">
+                <h1 class="Titre-Categorie">Texte sur moi</h1>
+            </article>
+            <article id="OBJ">
+                <h1 class="Titre-Categorie">Texte sur mes objectifs</h1>
+            </article>
+        </section>
+    </main>
+</body>
+</html>
+ 
